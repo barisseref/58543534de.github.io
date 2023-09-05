@@ -1,0 +1,559 @@
+/* Genel Sayfa Stili */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(bg/arkaplan.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+   
+}
+/* zamanlayici-baş */
+.zamanlayici {
+    position: absolute;
+    display: flex;
+    flex-direction:column;
+    width: 100px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.zamanlayici-popup {
+    display: none;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.zamanlayici-popup h2, .zamanlayici-popup p {
+    margin: 0;
+}
+
+.zamanlayici-buttons button {
+    display: flex;
+    
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.zamanlayici-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* zamanlayici-bitiş */
+
+
+
+
+
+
+
+
+
+.macos-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+/* İconlar */
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    justify-items: flex-end;
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    box-shadow: 5px saddlebrown;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #3a3c77a9;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.icon:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Popuplar */
+.popup {
+    width: 90%;
+    height: 75%;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(175, 217, 254) 0%, rgb(149, 205, 255) 100%);
+    box-shadow: -2px 14px 27px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px 14px 27px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 14px 27px 0px rgba(0,0,0,0.75);
+    padding: 20px;
+    z-index: 1;
+}
+
+
+/* Örnek bir stil dosyası */
+.note-title {
+    font-weight: bold;
+    color: rgb(241, 0, 0);
+    font-size: 40px;
+    padding: 2px 5px;
+    margin-left: 3px;
+}
+
+header img {
+    width: 75px;
+    margin-top: 3px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.note-search {
+    padding: 4px 15px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    font-size: 17px;
+    width: 13rem;
+}
+
+.note-search:hover {
+    background-color: rgb(222, 223, 224);
+    cursor: pointer;
+}
+
+.note-btn {
+    margin: 5px;
+    border: none;
+    border-radius: 18px;
+    width: 2rem;
+    padding: 2px 8px;
+    font-size: 17px;
+}
+
+.note-btn:hover {
+    cursor: pointer;
+    background-color: rgb(224, 222, 222);
+}
+
+.note-your-notes {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.note-wrapper {
+    justify-content: center;
+    margin: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, 275px);
+}
+.note{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 20px;
+    }
+    .music{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        border-radius: 20px;
+        }
+
+
+
+.note-wrapper li {
+    height: 250px;
+    list-style: none;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(223deg, rgb(163, 160, 218) 0%, rgba(107, 179, 233, 1) 48%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.note-add-box,
+.note-icon,
+.bottom-content,
+.settings .menu li,
+.popup,
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.note-add-box {
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.note-add-box .note-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    border: 2px dashed black;
+}
+
+.note-wrapper .note {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.note-add-box p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.note .details {
+    max-height: 160px;
+    overflow-y: auto;
+}
+
+.note p {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.note span {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.note .bottom-content {
+    padding: 10px;
+    border-top: 1px solid rgb(88, 4, 67);
+}
+
+.bottom-content span {
+    color: #d8d8d8;
+    font-size: 14px;
+}
+
+.bottom-content .settings {
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.settings {
+    position: relative;
+}
+
+.settings .menu {
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    padding: 3px 0;
+    border-radius: 4px;
+    transform: scale(0);
+    transform-origin: bottom right;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.settings.show .menu {
+    transform: scale(1);
+}
+
+.settings .menu li {
+    height: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 15px;
+    justify-content: flex-start;
+}
+
+.menu li:hover {
+    background: rgb(189, 74, 74);
+}
+
+.menu li i {
+    padding-right: 10px;
+}
+
+.note-popup-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+}
+
+.note-popup-box .note-popup {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    z-index: inherit;
+    max-width: 450px;
+    width: 100%;
+    justify-content: center;
+    background: rgb(122, 118, 117);
+    transform: translate(50%, -50%);
+}
+
+.note-popup-box,
+.note-popup-box .note-popup {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease;
+}
+
+.note-popup-box.show,
+.note-popup-box.show .note-popup {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.note-popup .note-content {
+    width: calc(100% - 15px);
+    background: rgb(170, 170, 170);
+    border-radius: 5px;
+}
+
+.note-popup .note-content header {
+    padding: 15px 25px;
+    border-bottom: 1px solid rgb(18, 48, 221);
+}
+
+.note-popup .note-content header p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.note-popup .note-content header i {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.note-popup .note-content form {
+    margin: 15px 23px 35px;
+}
+
+.note-popup .note-content form .note-row {
+    margin-bottom: 20px;
+}
+
+form .note-row label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.note-popup .note-content form :where(input,textarea) {
+    width: 100%;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid rgb(45, 118, 214);
+    font-size: 18px;
+    padding: 5px;
+}
+
+.note-popup .note-content form textarea {
+    height: 150px;
+    resize: none;
+    padding: 4px;
+}
+
+.note-popup .note-content form button:hover {
+    background: rgb(22, 80, 206);
+}
+
+.note-popup .note-content form button {
+    margin-top: 8px;
+    padding: 4px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgb(10, 116, 253);
+}
+
+.note-popup .note-content form #file {
+    margin-top: 8px;
+    padding: 10px;
+    width: 95%;
+    height: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgb(136, 125, 125);
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.yazi-popup {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 75%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Arkaplan rengi ve yarı saydamlık */
+    z-index: 999; /* Popup'ın üstte görünmesini sağlar */
+  }
+  
+  .yazi-popup-content {
+    background-color: #fff;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .yazi-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 450px) {
+    .note-popup-box .note-popup {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        z-index: inherit;
+        max-width: 370px;
+        width: 100%;
+        justify-content: center;
+        background: rgb(134, 132, 132);
+        transform: translate(50%, -50%);
+    }
+}
+
+@media (max-width: 375px) {
+    .note-popup-box .note-popup {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        z-index: inherit;
+        max-width: 320px;
+        max-height: 350px;
+        width: 100%;
+        justify-content: center;
+        background: rgb(139, 134, 134);
+        transform: translate(50%, -50%);
+    }
+}
+
+@media (max-width: 530px) {
+    .note-search {
+        width: 10rem;
+        margin-top: 10px;
+        margin-right: 12px;
+    }
+}
+
+@media (max-width: 630px) {
+    .note-form {
+        display: flex;
+    }
+
+    .note-search {
+        width: 10rem;
+        margin-top: 8px;
+        margin-right: 8px;
+    }
+
+    .note-btn {
+        margin: 8px;
+    }
+}
+
+@media (max-width: 470px) {
+    .note-search {
+        width: 10rem;
+        font-size: 17px;
+    }
+
+    header img {
+        margin-right: 4px;
+    }
+}
